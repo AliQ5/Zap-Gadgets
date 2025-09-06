@@ -137,19 +137,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 const dData = [
-  {
-    name: "Deal 3",
-    gallery: [
-      "Products/PR5/1.jpeg",
-      "Products/PR4/1.jpeg",
-      "Products/PR3/1.jpeg",
-    ],
-    orprice: 2500,
-    dealprice: 2000,
-    save: 2500 - 2000,
-    percentage: Math.floor((2500 - 2000) / 2500 * 100),
-    time: "00h 0m 55s"
-  },
+  // {
+  //   name: "Deal 3",
+  //   gallery: [
+  //     "Products/PR5/1.jpeg",
+  //     "Products/PR4/1.jpeg",
+  //     "Products/PR3/1.jpeg",
+  //   ],
+  //   orprice: 2500,
+  //   dealprice: 2000,
+  //   save: 2500 - 2000,
+  //   percentage: Math.floor((2500 - 2000) / 2500 * 100),
+  //   time: "00h 0m 55s"
+  // },
 ];
 
 // Helper to parse "22h 35m 23s" into seconds
