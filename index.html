@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Meta Basics -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- SEO & Social -->
+      <title>ZAP-GADGETS | Discover the Future</title>
+      <meta name="description" content="ZAP-GADGETS - Discover the latest and futuristic gadgets at affordable prices. Shop now for trending products." />
+      <meta name="keywords" content="gadgets, electronics, futuristic gadgets, online shopping, zap gadgets" />
+      <meta name="author" content="ZAP-GADGETS" />
+      <!-- Open Graph (for social share) -->
+      <meta property="og:title" content="ZAP-GADGETS | Discover the Future" />
+      <meta property="og:description" content="Shop the latest futuristic gadgets with ZAP-GADGETS. Affordable, stylish, and innovative." />
+      <meta property="og:image" content="Graphics/Logo.png" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://yourdomain.com" />
+      <!-- External Styles -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="shop.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Zap-Gadgets</title>
+    </head>
+<body>
+      <!-- Header Nav Links Cart Search -->
+<header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="home.html" aria-label="Home">
+          <img src="Graphics/LG.png" alt="Zap-Gadgets Logo" loading="lazy" style="height:40px;">
+        </a>
+      </div>
+      <div class="links">
+        <a href="home.html" class="lnk home-icon" aria-label="Home"><i class="ri-home-4-line"></i></a>
+      </div>
+      <div class="search-cart">
+        <form class="search-bar" role="search" autocomplete="off" onsubmit="return false;">
+          <input type="text" class="search-input srch" placeholder="Search products..." aria-label="Search products" />
+          <button type="button" class="search-btn srch-btn" aria-label="Search"><i class="ri-search-2-line"></i></button>
+        </form>
+        <button class="cart-btn" aria-label="Open Cart" type="button"><i class="ri-shopping-cart-2-line"></i></button>
+      </div>
+    </nav>
+  </header>
+
+<!-- Page 6: Product Categories & Price Range Filter + Product Cards -->
+<section class="shop-filters-section">
+  <div class="shop-filters-container">
+    <aside class="shop-sidebar">
+      <h2 class="sidebar-title">Categories</h2>
+      <ul class="category-list">
+        <li><label><input type="checkbox" name="category" value="kitchen"> Kitchen Items</label></li>
+        <li><label><input type="checkbox" name="category" value="watches"> Watches</label></li>
+        <li><label><input type="checkbox" name="category" value="phones"> Smart Phones</label></li>
+        <li><label><input type="checkbox" name="category" value="car-cleaners"> Car Cleaners</label></li>
+        <li><label><input type="checkbox" name="category" value="accessories"> Accessories</label></li>
+        <li><label><input type="checkbox" name="category" value="audio"> Audio Devices</label></li>
+      </ul>
+      <div class="price-range-filter">
+        <h2 class="sidebar-title">Price Range</h2>
+        <div class="price-inputs">
+          <input type="number" min="0" placeholder="Min" class="price-min" />
+          <span class="price-separator">-</span>
+          <input type="number" min="0" placeholder="Max" class="price-max" />
+        </div>
+        <button class="apply-filter-btn" type="button">Apply</button>
+      </div>
+    </aside>
+    <main class="shop-products-main">
+      <!-- Placeholder for when no products are shown -->
+      <div class="products-placeholder-content" id="products-placeholder">
+        <i class="ri-shopping-bag-3-line"></i>
+        <h3>Products will appear here</h3>
+        <p>Use the filters to find your perfect gadget!</p>
+      </div>
+      <!-- Product cards will be injected here by JS -->
+      <div class="products-grid" id="products-grid">
+        <!-- Example static card for design preview, will be replaced by JS -->
+        <!-- <div class="product-card">
+          <div class="product-image">
+            <img src="Products/PR5/1.jpeg" alt="Product Name" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h4 class="product-name">Smart Gadget Pro</h4>
+            <p class="product-desc">Experience the future with this innovative gadget. Sleek, powerful, and affordable.</p>
+            <div class="product-bottom">
+              <span class="product-price">$49.99</span>
+              <button class="add-to-cart-btn" type="button"><i class="ri-shopping-cart-line"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div> -->
+        <!-- End static card -->
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- Cart model both pages -->
+<div class="cart-modal-overlay" id="cart-modal-overlay" tabindex="-1" aria-hidden="true">
+  <div class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-modal-title">
+    <button class="cart-modal-close" id="cart-modal-close" aria-label="Close Cart">&times;</button>
+    <h2 class="cart-modal-title" id="cart-modal-title"><i class="ri-shopping-cart-2-line"></i> Your Cart</h2>
+    <div class="cart-modal-content" id="cart-modal-content">
+      <p class="cart-empty-msg">Your cart is empty.</p>
+      <!-- Cart items will be injected here -->
+    </div>
+    <div class="cart-modal-footer">
+      <span class="cart-total-label">Total:</span>
+      <span class="cart-total-amount" id="cart-total-amount">Rs0</span>
+      <button class="cart-checkout-btn check-out" id="cart-checkout-btn" type="button">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<!-- Page 5 footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand-social">
+      <div class="footer-brand">
+        <span class="footer-logo">Zap Gadgets</span>
+        <p class="footer-desc">Curating the finest gadgets for you.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="footer-icon"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.instagram.com/zap_gadgets1?igsh=MWgyaDdqanV6cGI0dA==" target="_blank" aria-label="Instagram" class="footer-icon"><i class="ri-instagram-line"></i></a>
+        <a href="https://whatsapp.com/channel/0029VbArRWf05MUWMHSJnF3C" target="_blank" aria-label="WhatsApp" class="footer-icon"><i class="ri-whatsapp-line"></i></a>
+        <a href="https://www.youtube.com/@ZAPGadgets-q3y" target="_blank" aria-label="YouTube" class="footer-icon"><i class="ri-youtube-fill"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="footerYear"></span> Zap Gadgets. All rights reserved.</span>
+  </div>
+</footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="shop.js"></script>
+<script src="info.js"></script>
+</html>

@@ -1,0 +1,112 @@
+
+
+/* Responsive styles for .page-2 and its children */
+@media (max-width:1300px) {
+
+  .f-card{
+    width: 12em;
+    height: 18em;
+  }
+
+  .fcard-container{
+    overflow-x: scroll;
+  }
+
+  .ct-t, .ct-b{
+    height: 9em;
+  }
+  
+  .cts-tp, .cts-bt{
+    gap: 2em;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+  
+  .f-card{
+    width: 10em;
+    height: 15em;
+  }
+
+  .ct-t, .ct-b{
+    height: 7em;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .page-2{
+    flex-direction: column;
+    padding: .2em .1em;
+    height: 100%;
+  }
+
+  .categories,
+  .feature-products{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5em;
+    max-height: max-content;
+  }
+  
+  .fcard-container{
+    max-height: max-content;
+    flex-direction: row;
+   /* overflow: auto; */
+    overflow-x: visible;
+    flex-direction: column;
+  }
+
+  .f-card{
+    width: 80%;
+    height: 25em;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .categories{
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+  .about-info, .about-team {
+    width: 100%;
+    min-width: unset;
+    max-width: 600px;
+  }
+  .team-cards {
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero h1 {
+    font-size: 2.2em;
+  }
+  .about-hero .about-desc {
+    font-size: 1em;
+  }
+  .about-info h2, .about-team h2 {
+    font-size: 1.3em;
+  }
+  .profile-card {
+    width: 95vw;
+    max-width: 98vw;
+    min-height: 220px;
+    padding: 1em 0.5em;
+  }
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+}

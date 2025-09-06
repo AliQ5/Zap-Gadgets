@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Basics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO & Social -->
+    <title>ZAP-GADGETS | Discover the Future</title>
+    <meta
+      name="description"
+      content="ZAP-GADGETS - Discover the latest and futuristic gadgets at affordable prices. Shop now for trending products."
+    />
+    <meta
+      name="keywords"
+      content="gadgets, electronics, futuristic gadgets, online shopping, zap gadgets"
+    />
+    <meta name="author" content="ZAP-GADGETS" />
+    <!-- Open Graph (for social share) -->
+    <meta property="og:title" content="ZAP-GADGETS | Discover the Future" />
+    <meta
+      property="og:description"
+      content="Shop the latest futuristic gadgets with ZAP-GADGETS. Affordable, stylish, and innovative."
+    />
+    <meta property="og:image" content="Graphics/Logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <!-- External Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Zap-Gadgets</title>
+  </head>
+  <body>
+    <!-- Header Nav Links Cart Search -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="home.html" aria-label="Home">
+            <img
+              src="Graphics/LG.png"
+              alt="Zap-Gadgets Logo"
+              loading="lazy"
+              style="height: 40px"
+            />
+          </a>
+        </div>
+        <div class="links">
+          <a href="#home" class="lnk home-icon" aria-label="Home"
+            ><i class="ri-home-4-line"></i
+          ></a>
+          <a href="index.html" class="lnk">Shop</a>
+          <a href="#pg2" class="lnk">New Arrivals</a>
+          <a href="#pg3" class="lnk">Deals</a>
+          <a href="#pg4" class="lnk">About Us</a>
+        </div>
+        <div class="search-cart">
+          <form
+            class="search-bar"
+            role="search"
+            autocomplete="off"
+            onsubmit="return false;"
+          >
+            <input
+              type="text"
+              class="search-input srchh"
+              placeholder="Search products..."
+              aria-label="Search products"
+            />
+            <button type="button" class="search-btn" aria-label="Search">
+              <i class="ri-search-2-line"></i>
+            </button>
+          </form>
+          <button class="cart-btn" aria-label="Open Cart" type="button">
+            <i class="ri-shopping-cart-2-line"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Logo Shop-Navigation Image-Slider -->
+
+    <section class="landing-page" id="home">
+      <div class="img-slider">
+        <img
+          class="lad"
+          src="Graphics/landing/Smart_Watch.jpg"
+          alt="Smart Watch Gadget"
+        />
+        <img
+          class="lad"
+          src="Graphics/landing/Smart_Water_Bottle.jpg"
+          alt="Smart Water Bottle Gadget"
+        />
+        <img
+          class="lad"
+          src="Graphics/landing/Smart_Led_Screen.jpg"
+          alt="Smart LED Screen Gadget"
+        />
+        <img
+          class="lad"
+          src="Graphics/landing/Smart_Phone.jpg"
+          alt="Smart Phone Gadget"
+        />
+      </div>
+      <div class="landing-info">
+        <div class="in-lg">
+          <img src="Graphics/LG.png" alt="Z" />
+          <h2>Zap-Gadgets</h2>
+        </div>
+
+        <div class="tagline">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="button" onclick="GotoShop()">
+          <h4>Shop Now</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page-2 feature-products categories -->
+
+    <div class="page-2" id="pg2">
+      <div class="categories">
+        <h2 class="hd">Categories</h2>
+        <div class="cts-container">
+          <div class="cts-tp">
+            <div class="kitchen ct-t ct-card" data-label="Kitchen Items">
+              <img src="Graphics/Categories/Kitchen.png" alt="" />
+            </div>
+            <div class="accesiories ct-b ct-card" data-label="Watches">
+              <img src="Graphics/Categories/Watches.png" alt="" />
+            </div>
+          </div>
+          <div class="cts-bt">
+            <div class="phones ct-b ct-card" data-label="Smart Phones">
+              <img src="Graphics/Categories/Phones.png" alt="" />
+            </div>
+            <div class="cars ct-t ct-card" data-label="Car Cleaners">
+              <img src="Graphics/Categories/Cars.png" alt="" />
+            </div>
+            <div class="diy ct-t ct-card" data-label="Diy crafts">
+              <img src="Graphics/Categories/Diy.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-products">
+        <h2 class="hd">Featured Products</h2>
+        <div class="fcard-container">
+          <!-- These cards will be generated in script.js -->
+
+          <!-- <div class="f-card">
+        <div class="f-img"><img src="Products/PR5/main.png" alt=""></div>
+        <div class="f-title">Arabic Aura</div>
+        <div class="f-info"><h4>Elegant black Arabic Aura wristwatch with minimalist dial featuring Arabic numerals. Crafted with a sleek stainless steel case, leather strap, and precise quartz movement. Perfect for both casual and formal wear, combining modern style with cultural elegance.</h4></div>
+        <div class="f-bt">
+          <div class="f-price">Rs 1250</div>
+        <div class="add-btn">Add to Cart</div>
+        </div>
+      </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 3 Deals -->
+
+    <div class="page-3" id="pg3">
+      <div class="d-head">
+        <h1>Best Deals</h1>
+      </div>
+      <div class="dc-container">
+        <!-- Generated automatically in Js -->
+
+        <!-- <div class="deal-card">
+      <div class="dc-top"><h1>Deal 1</h1></div>
+      <div class="dc-bottom">
+        <div class="dbt-top">
+          <div class="t-img"><img src="Products/PR1/1.jpeg" alt=""></div>
+          <div class="t-img"><img src="Products/PR2/2.jpeg" alt=""></div>
+          <div class="t-img"><img src="Products/PR3/3.jpeg" alt=""></div>
+        </div>
+        <div class="dbt-bottom">
+          <h3 class="or-price">RS <span class="cut-line">2500</span></h3>
+          <h3 class="dl-price">Deal Price: <span class="new-pr">2000</span></h3>
+          <div class="save-box">You Save: Rs 500 (20%)</div>
+          <div class="bt-b">
+            <div class="timer">Ends in: 22h 15m 35s</div>
+            <div class="dl-btn add-btn">Add to Cart</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      </div>
+    </div>
+
+    <!-- Page 4 About Us Information-->
+    <div class="about-section" id="pg4">
+      <div class="about-hero">
+        <h1>About <span class="highlight">Us</span></h1>
+        <p class="about-desc">
+          Welcome to <span class="brand-name">Zap Gadgets</span>! We are
+          passionate about curating the finest products and delivering
+          exceptional value to our customers. Our mission is to blend quality,
+          creativity, and trust, making your shopping experience truly
+          memorable.
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-info">
+          <h2>Our Story</h2>
+          <p>
+            Zap Gadgets began in Pakistan in 2024 with a mere thought: why
+            Are most gadgets either overly pricey or utterly useless? We
+            wanted more of, something that at least made sense for
+            regular individuals. We considered it from the start. Each
+            product that is imported needs to be intelligent, useful, and entertaining. It needs to make
+            you smile, save you time, or solve an issue. If it doesn't satisfy
+            that test, we do not bother selling it. There's already enough life.
+            stress, so we're seeking to give you devices that have a bit
+            thrill without draining your pocket. No deceitful hype, no
+            it's rubbish, just products that really do work. Zap Gadgets is
+            more than a store. A guarantee of simplifying technology.
+            affordable, and entertaining for all — students, parents, and
+            any person who is interested in products that actually ease life.
+          </p>
+          <h2>Our Values</h2>
+          <ul>
+            <li>
+              <strong>Quality First:</strong> We handpick every product to
+              ensure it meets our high standards.
+            </li>
+            <li>
+              <strong>Customer Centric:</strong> Your satisfaction is our top
+              priority.
+            </li>
+            <li>
+              <strong>Integrity:</strong> We operate with honesty and
+              transparency.
+            </li>
+            <li>
+              <strong>Innovation:</strong> We embrace creativity and new ideas.
+            </li>
+          </ul>
+        </div>
+        <div class="about-team">
+          <h2>Meet Our Team</h2>
+          <div class="team-cards" id="teamCards">
+            <!-- Team member cards will be injected here by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 5 footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand-social">
+          <div class="footer-brand">
+            <span class="footer-logo">Zap Gadgets</span>
+            <p class="footer-desc">Curating the finest gadgets for you.</p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              class="footer-icon"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/zap_gadgets1?igsh=MWgyaDdqanV6cGI0dA=="
+              target="_blank"
+              aria-label="Instagram"
+              class="footer-icon"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://whatsapp.com/channel/0029VbArRWf05MUWMHSJnF3C"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="footer-icon"
+              ><i class="ri-whatsapp-line"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@ZAPGadgets-q3y"
+              target="_blank"
+              aria-label="YouTube"
+              class="footer-icon"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-contact-form">
+          <h3>Want to Contact Us?</h3>
+          <form id="contactForm">
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="3"
+              required
+            ></textarea>
+            <button type="submit" id="sendBtn">Send Message</button>
+            <div id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >&copy; <span id="footerYear"></span> Zap Gadgets. All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Cart model both pages -->
+    <div
+      class="cart-modal-overlay"
+      id="cart-modal-overlay"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="cart-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cart-modal-title"
+      >
+        <button
+          class="cart-modal-close"
+          id="cart-modal-close"
+          aria-label="Close Cart"
+        >
+          &times;
+        </button>
+        <h2 class="cart-modal-title" id="cart-modal-title">
+          <i class="ri-shopping-cart-2-line"></i> Your Cart
+        </h2>
+        <div class="cart-modal-content" id="cart-modal-content">
+          <p class="cart-empty-msg">Your cart is empty.</p>
+          <!-- Cart items will be injected here -->
+        </div>
+        <div class="cart-modal-footer">
+          <span class="cart-total-label">Total:</span>
+          <span class="cart-total-amount" id="cart-total-amount">Rs0</span>
+          <button
+            class="cart-checkout-btn check-out"
+            id="cart-checkout-btn"
+            type="button"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+  <script src="shop.js"></script>
+</html>
