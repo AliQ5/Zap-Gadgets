@@ -159,6 +159,81 @@ const products_data = [
     price: 730,
     category: ["accessories", "home", "kitchen"]
   },
+  {
+    PreviewImgPath: "Products/PR15/main.png", 
+    gallery: [
+      "Products/PR15/1.jpeg", 
+      "Products/PR15/2.jpeg", 
+      "Products/PR15/3.jpeg",
+      "Products/PR15/4.jpeg"
+    ],
+    name: "Stainley Floral (1200ML / 40OZ)", 
+    info: "The Stainley Floral is a premium 1200ML (40OZ) insulated tumbler designed for both hot and cold drinks. Built with durable stainless steel, it keeps your beverages at the right temperature for hours while preventing condensation on the outside. The floral design adds a touch of style, making it perfect for daily use, travel, office, or gifting. With a large 1200ML capacity, it’s ideal for water, coffee, tea, smoothies, or any drink you love to carry throughout the day.", 
+    price: 4150, 
+    category: ["Kitchen", "Accessories", "Home"]
+  },
+  {
+    PreviewImgPath: "Products/PR16/main.png", 
+    gallery: [
+      "Products/PR16/1.jpeg", 
+      "Products/PR16/2.jpeg", 
+      "Products/PR16/3.jpeg"
+    ],
+    name: "360 Makeup Organizer", 
+    info: "This rotating brush holder and 360 makeup organizer is designed to neatly store and display your cosmetics, skincare, and beauty tools. With its smooth 360° rotation, it allows quick access to every item while keeping your vanity clean and organized. Durable, easy to clean, and compact, it fits perfectly on any dressing table.", 
+    price: 1050, 
+    category: ["Accessories", "Home"]
+  },
+  {
+    PreviewImgPath: "Products/PR17/main.png", 
+    gallery: [
+      "Products/PR17/1.jpeg", 
+      "Products/PR17/2.jpeg", 
+      "Products/PR17/3.jpeg",
+      "Products/PR17/4.jpeg"
+    ],
+    name: "40oz Stanley Stainless Steel Tumbler (1200ML)", 
+    info: "The Stanley 40oz Stainless Steel Tumbler (1200ML) is built for durability and everyday convenience. It keeps drinks hot or cold for hours with its double-wall insulation. Large in capacity and easy to carry, this tumbler is perfect for water, coffee, tea, or smoothies. Ideal for travel, work, or home use.", 
+    price: 3500, 
+    category: ["Kitchen", "Accessories"]
+  },
+  {
+    PreviewImgPath: "Products/PR18/main.png", 
+    gallery: [
+      "Products/PR18/1.jpeg", 
+      "Products/PR18/2.jpeg",
+    ],
+    name: "Accessories Organizer Case", 
+    info: "This portable electronic accessories organizer case keeps your cables, chargers, earphones, and small gadgets in one place. Designed with multiple compartments, it prevents tangling and damage while traveling or at home. Lightweight, durable, and compact, it is the perfect solution for keeping your tech gear organized.", 
+    price: 1250, 
+    category: ["Accessories", "Mobile"]
+  },
+  {
+    PreviewImgPath: "Products/PR19/main.png", 
+    gallery: [
+      "Products/PR19/1.jpeg", 
+      "Products/PR19/2.jpeg", 
+      "Products/PR19/3.jpeg"
+    ],
+    name: "AlienCross Bag", 
+    info: "The AlienCross Bag is a stylish and versatile everyday carry option. With a unique design and durable build, it is ideal for school, office, or casual outings. Spacious enough to hold your essentials while staying lightweight and comfortable to wear.", 
+    price: 2250, 
+    category: ["Accessories"]
+  },
+  {
+    PreviewImgPath: "Products/PR20/main.png", 
+    gallery: [
+      "Products/PR20/1.jpeg", 
+      "Products/PR20/2.jpeg", 
+      "Products/PR20/3.jpeg",
+      "Products/PR20/4.jpeg"
+    ],
+    name: "Metal Bread Storage Box", 
+    info: "The Multifunctional Luxury Metal Bread Storage Box is designed to keep bread, snacks, and baked goods fresh for longer. Made with high-quality metal, it is strong, durable, and stylish enough to enhance any kitchen. Its spacious design allows easy storage while maintaining freshness and reducing clutter.", 
+    price: 4300, 
+    category: ["Kitchen", "Home"]
+  }
+  
 ];
 
 function renderProducts(card) {
